@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-UltLt.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-BoldIt.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-MediumIt.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-ThinIt.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-HeavyIt.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-LightIt.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-UltLtIt.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-BookIt.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-XtraBlkIt.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-XtraBlk.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Book.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-BlackIt.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-It.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue';
+    src: url('../fonts/NeueFrutigerWorld-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+.Neue {
+    font-family: 'Neue';
+}
+
