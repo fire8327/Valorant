@@ -1,10 +1,16 @@
 <template>
-    <div>
-        
+    <div class="col-span-full w-full h-screen -mt-8 xl:-mt-12 flex flex-col justify-center items-center gap-4 md:gap-8 xl:gap-12 relative text-white">
+        <img src="/images/hero/start.jpg" class="absolute inset-0 z-[1] object-cover w-full h-full"/>
+        <div class="absolute inset-0 z-[2] w-full h-full bg-black/40"></div>
+        <img src="/images/hero/overlay.png" class="absolute inset-0 z-[3] object-cover w-full h-full"/>
+        <p class="uppercase text-3xl md:text-4xl xl:text-6xl z-10">Название</p>
+        <p class="text-center z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button class="relative group z-10 max-md:w-[280px] w-[300px] h-[60px] uppercase text-sm bg-[#ff4655] text-white after:absolute after:-top-1.5 after:left-1/2 after:-translate-x-1/2 after:w-[calc(100%+12px)] after:h-1/2 after:border-t after:border-x after:border-[#bdbcb7] before:absolute before:-bottom-1.5 before:left-1/2 before:-translate-x-1/2 before:w-[calc(100%+12px)] before:h-1/2 before:border-b before:border-x before:border-[#bdbcb7]">
+            <span class="w-full h-full flex items-center justify-center relative after:absolute after:w-[120%] after:h-full after:bg-[#101822] after:skew-x-[-10deg] z-[1] after:-z-[1] after:-translate-x-full after:transition-transform after:duration-300 group-hover:after:translate-x-0 overflow-hidden before:absolute before:h-1 before:w-1 before:bg-[#101822] before:right-0 before:bottom-0 before:transition-colors before:duration-300 group-hover:before:bg-white">Начать знакомство</span>
+        </button>
     </div>
 </template>
 
 <script setup>
-
 </script>
 

@@ -5,7 +5,7 @@
 
 @layer base {
     #__nuxt{
-        @apply flex flex-col min-h-screen
+        @apply flex flex-col min-h-screen bg-[#ECE8E1] text-[#101822]
     }
         
     :root{
