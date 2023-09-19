@@ -5,16 +5,16 @@
                 <Icon name="simple-icons:valorant" class="text-white text-4xl"/>  
             </NuxtLink>
             <div class="flex items-center gap-4 uppercase text-sm font-semibold max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:bg-[#111111] max-lg:flex-col max-lg:py-4 max-lg:z-50 duration-500 transition-all" :class="isMenuShow ? 'max-lg:top-full max-lg:border-t max-lg:border-white' : 'max-lg:top-0 max-lg:-translate-y-full'">
-                <NuxtLink to="/about" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     О нас
                 </NuxtLink> 
-                <NuxtLink to="/agents" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/agents" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     Агенты
                 </NuxtLink> 
-                <NuxtLink to="/maps" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/maps" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     Карты
                 </NuxtLink> 
-                <NuxtLink to="/about" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     О нас
                 </NuxtLink> 
             </div>
