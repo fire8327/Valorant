@@ -23,7 +23,7 @@
                 <span :class="{'opacity-0' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] transition-opacity ease-linear duration-300"></span>
                 <span :class="{'-rotate-45' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] origin-[0] transition-transform ease-linear duration-300"></span>
             </button> 
-            <div class="bg-[#00000099] opacity-50 absolute inset-0 min-h-screen max-lg:z-40 top-full" :class="{'hidden' : !isMenuShow}"></div>           
+            <div class="bg-[#00000099] opacity-50 absolute inset-0 min-h-screen max-lg:z-40 top-full lg:hidden" :class="{'hidden' : !isMenuShow}"></div>           
         </div>
     </header>
 </template>
