@@ -1,29 +1,57 @@
 <template>
-    <header class="w-full bg-[#111111] py-4 grid-container Neue relative" ref="header">
+    <header class="w-full py-8 lg:py-10 xl:py-[54px] grid-container relative uppercase text-sm md:text-base xl:text-lg font-semibold" ref="header">
         <div class="flex justify-between items-center">
             <NuxtLink to="/">
-                <Icon name="simple-icons:valorant" class="text-white text-4xl"/>  
+                <Icon name="simple-icons:valorant" class="text-4xl lg:text-5xl"/>  
             </NuxtLink>
-            <div class="flex items-center gap-4 uppercase text-sm font-semibold max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:bg-[#111111] max-lg:flex-col max-lg:py-4 max-lg:z-50 duration-500 transition-all" :class="isMenuShow ? 'max-lg:top-full max-lg:border-t max-lg:border-white' : 'max-lg:top-0 max-lg:-translate-y-full'">
-                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+            <div class="flex items-center gap-6 md:gap-12 xl:gap-[52px] max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:bg-[#1F1F1F] max-lg:flex-col max-lg:p-4 max-lg:z-40 duration-500 transition-all" :class="isMenuShow ? 'max-lg:top-full max-lg:border-t max-lg:border-white' : 'max-lg:top-0 max-lg:-translate-y-full'">
+                <NuxtLink to="/" class="relative group" @click="isMenuShow = !isMenuShow">
+                    <span>Главная</span>
+                    <span class="max-lg:hidden absolute link rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+                </NuxtLink>
+                <NuxtLink to="/about" class="relative group" @click="isMenuShow = !isMenuShow">
+                    <span>О нас</span>
+                    <span class="max-lg:hidden absolute link rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+                </NuxtLink>
+                <NuxtLink to="/agents" class="relative group" @click="isMenuShow = !isMenuShow">
+                    <span>Агенты</span>
+                    <span class="max-lg:hidden absolute link rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+                </NuxtLink>
+                <NuxtLink to="/maps" class="relative group" @click="isMenuShow = !isMenuShow">
+                    <span>Карты</span>
+                    <span class="max-lg:hidden absolute link rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+                </NuxtLink>
+                <NuxtLink to="/guns" class="relative group" @click="isMenuShow = !isMenuShow">
+                    <span>Оружие</span>
+                    <span class="max-lg:hidden absolute link rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
+                </NuxtLink>
+            </div>
+            <div class="flex items-center gap-8">
+                <button class="py-2 xl:py-1 text-center w-[130px] rounded uppercase text-sm md:text-base xl:text-lg font-semibold button">Play</button>
+                <button @click="isMenuShow = !isMenuShow" class="flex flex-col justify-between w-[26px] transition-[height] ease-linear duration-100 cursor-pointer lg:hidden" :class="isMenuShow ? 'h-5' : 'h-3.5'">
+                    <span :class="{'rotate-45' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] origin-[0] transition-transform ease-linear duration-300"></span>
+                    <span :class="{'opacity-0' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] transition-opacity ease-linear duration-300"></span>
+                    <span :class="{'-rotate-45' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] origin-[0] transition-transform ease-linear duration-300"></span>
+                </button>                 
+            </div>
+            <!-- <div class="flex items-center gap-4 uppercase text-sm font-semibold max-lg:absolute max-lg:left-0 max-lg:w-full max-lg:bg-[#111111] max-lg:flex-col max-lg:py-4 max-lg:z-50 duration-500 transition-all" :class="isMenuShow ? 'max-lg:top-full max-lg:border-t max-lg:border-white' : 'max-lg:top-0 max-lg:-translate-y-full'">
+                <NuxtLink to="/" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                    Главная
+                </NuxtLink> 
+                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     О нас
                 </NuxtLink> 
-                <NuxtLink to="/agents" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/agents" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     Агенты
                 </NuxtLink> 
-                <NuxtLink to="/maps" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/maps" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     Карты
                 </NuxtLink> 
-                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 text-white bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
+                <NuxtLink to="/about" @click="isMenuShow = !isMenuShow" class="relative px-4 py-2 bg-transparent rounded-lg duration-300 transition-colors hover:bg-[#8080804d] after:w-full after:h-1 after:rounded-full after:bg-transparent after:duration-300 after:transition-colors hover:after:bg-[#ff4655] after:absolute after:-bottom-3 after:left-1/2 after:-translate-x-1/2">
                     О нас
                 </NuxtLink> 
-            </div>
-            <button @click="isMenuShow = !isMenuShow" class="flex flex-col justify-between w-[26px] transition-[height] ease-linear duration-100 cursor-pointer lg:hidden" :class="isMenuShow ? 'h-5' : 'h-3.5'">
-                <span :class="{'rotate-45' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] origin-[0] transition-transform ease-linear duration-300"></span>
-                <span :class="{'opacity-0' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] transition-opacity ease-linear duration-300"></span>
-                <span :class="{'-rotate-45' : isMenuShow}" class="w-full h-0.5 bg-white rounded-[1px] origin-[0] transition-transform ease-linear duration-300"></span>
-            </button> 
-            <div class="bg-[#00000099] opacity-50 absolute inset-0 min-h-screen max-lg:z-40 top-full lg:hidden" :class="{'hidden' : !isMenuShow}"></div>           
+            </div> -->
+            <div class="bg-[#00000099] opacity-50 absolute inset-0 min-h-screen max-lg:z-30 top-full lg:hidden" :class="{'hidden' : !isMenuShow}"></div>           
         </div>
     </header>
 </template>
@@ -31,12 +59,23 @@
 <script setup>
     const isMenuShow = ref(false)
 
-    const header = ref()
+    /* const header = ref()
     onMounted(() => {
         let headerHeight = header.value.clientHeight
         window.addEventListener("resize", () => {
             headerHeight = header.value.clientHeight
             console.log(headerHeight)
         })
-    })    
+    })  */   
 </script>
+
+<style scoped>
+    .link {
+        background: #2CE8C2;
+        filter: drop-shadow(0px 0px 21px rgba(44, 232, 194, 0.35));
+    }
+    .button {
+        border: 1.5px solid #2EECC5;
+        box-shadow: 0px 0px 38px 0px rgba(46, 236, 197, 0.20);
+    }
+</style>
