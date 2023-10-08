@@ -9,6 +9,7 @@
             <span class="w-full h-full flex items-center justify-center relative after:absolute after:w-[120%] after:h-full after:bg-[#101822] after:skew-x-[-10deg] z-[1] after:-z-[1] after:-translate-x-full after:transition-transform after:duration-300 group-hover:after:translate-x-0 overflow-hidden before:absolute before:h-1 before:w-1 before:bg-[#101822] before:right-0 before:bottom-0 before:transition-colors before:duration-300 group-hover:before:bg-white">Начать знакомство</span>
         </button>
     </div> -->
+    <div class="w-full bg-black" :style="`height: calc(100vh - ${header.height}px)`"></div>
     <div class="flex flex-col gap-16 md:gap-20 xl:gap-36 pt-20 md:pt-36 xl:pt-56">
         <div class="flex lg:items-center justify-between max-lg:flex-col gap-8 lg:gap-10">
             <div class="flex flex-col gap-4 w-full lg:max-w-[55%]">
@@ -24,5 +25,9 @@
 </template>
 
 <script setup>
+    import { useHeader } from '~/stores/header'
+    
+    const header = useHeader()
+
 </script>
 
