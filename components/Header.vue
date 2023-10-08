@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full py-8 lg:py-10 xl:py-[54px] grid-container relative uppercase text-sm md:text-base xl:text-lg font-semibold lg:z-[1]" ref="header">
+    <header class="w-full py-8 lg:py-10 xl:py-[54px] grid-container relative uppercase text-sm md:text-base xl:text-lg lg:z-[1]" ref="header">
         <div class="flex justify-between items-center">
             <NuxtLink to="/" class="max-lg:z-40">
                 <Icon name="simple-icons:valorant" class="text-4xl lg:text-5xl"/>  
@@ -59,14 +59,13 @@
 <script setup>
     const isMenuShow = ref(false)
 
-    /* const header = ref()
+    const header = ref()
     onMounted(() => {
         let headerHeight = header.value.clientHeight
         window.addEventListener("resize", () => {
             headerHeight = header.value.clientHeight
-            console.log(headerHeight)
         })
-    })  */   
+    })    
 </script>
 
 <style scoped>   
