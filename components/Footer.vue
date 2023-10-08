@@ -1,5 +1,5 @@
 <template>
-    <footer class="grid-container bg-[#111111] mt-auto py-[18px] pb-12 Neue">
+    <footer class="grid-container bg-[#111111] mt-auto py-[18px] pb-12 Neue z-[1]">
         <div class="flex flex-col items-center gap-6">
             <div class="flex gap-3 pb-[22px]">
                 <NuxtLink to="#" class="flex justify-center items-center xl:h-8 xl:w-8 w-12 h-12 rounded-[12px] bg-[rgba(128,128,128,.2)]">

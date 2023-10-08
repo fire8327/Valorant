@@ -1,5 +1,5 @@
 <template>
-    <header class="w-full py-8 lg:py-10 xl:py-[54px] grid-container relative uppercase text-sm md:text-base xl:text-lg font-semibold" ref="header">
+    <header class="w-full py-8 lg:py-10 xl:py-[54px] grid-container relative uppercase text-sm md:text-base xl:text-lg font-semibold lg:z-[1]" ref="header">
         <div class="flex justify-between items-center">
             <NuxtLink to="/" class="max-lg:z-40">
                 <Icon name="simple-icons:valorant" class="text-4xl lg:text-5xl"/>  
