@@ -9,17 +9,30 @@
             <span class="w-full h-full flex items-center justify-center relative after:absolute after:w-[120%] after:h-full after:bg-[#101822] after:skew-x-[-10deg] z-[1] after:-z-[1] after:-translate-x-full after:transition-transform after:duration-300 group-hover:after:translate-x-0 overflow-hidden before:absolute before:h-1 before:w-1 before:bg-[#101822] before:right-0 before:bottom-0 before:transition-colors before:duration-300 group-hover:before:bg-white">Начать знакомство</span>
         </button>
     </div> -->
-    <div class="w-full bg-black" :style="`height: calc(100vh - ${header.height}px)`"></div>
+    <div class="w-full" :style="`height: calc(100vh - ${header.height}px)`"></div>
     <div class="flex flex-col gap-16 md:gap-20 xl:gap-36 pt-20 md:pt-36 xl:pt-56">
         <div class="flex lg:items-center justify-between max-lg:flex-col gap-8 lg:gap-10">
             <div class="flex flex-col gap-4 w-full lg:max-w-[55%]">
                 <p class="main_title text-[24px] md:text-[40px] xl:text-[55px] uppercase">Об игре</p>
-                <p class="text-sm xl:text-base text-white/60">
-                    Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. 
-                    And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
-                </p>
+                <p class="text-sm xl:text-base text-white/60">Сочетайте свой стиль и опыт на глобальной конкурентной арене. У вас есть 13 раундов, чтобы атаковать и защищать свою сторону, используя острую стрельбу и тактические способности. И, имея по одной жизни за раунд, вам нужно будет думать быстрее, чем ваш противник, если вы хотите выжить. Сразитесь с врагами в соревновательном и нерейтинговом режимах, а также в Deathmatch и Spike Rush.</p>
             </div>
             <div class="w-full lg:max-w-[45%] bg-black h-[335px]"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-9">
+            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
+                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Agents</p>
+                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
+                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Guns</p>
+                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                
+            </div>
+            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
+                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Maps</p>
+                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                
+            </div>
         </div>
     </div>
 </template>
