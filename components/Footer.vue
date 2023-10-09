@@ -35,7 +35,7 @@
         </div>
     </footer> -->
 
-    <footer class="grid-container pt-16 md:pt-20 xl:pt-40">
+    <footer class="grid-container pt-16 md:pt-20 xl:pt-40 z-[1]">
         <div class="flex flex-col items-center gap-8 md:gap-12 xl:gap-[56px]">
             <p class="text-2xl md:text-[40px] xl:text-[55px]">CONTACTS</p>
             <div class="flex items-center gap-9 xl:gap-16">
