@@ -19,20 +19,7 @@
             <div class="w-full lg:max-w-[45%] bg-black h-[335px]"></div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-9">
-            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
-                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Агенты</p>
-                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-            </div>
-            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
-                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Оружие</p>
-                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                
-            </div>
-            <div class="flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20">
-                <p class="uppeercase text-lg md:text-xl xl:text-2xl">Карты</p>
-                <p class="text-sm xl:text-base text-white/90">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                
-            </div>
+            <Tactic v-bind="tactic" v-for="tactic in tactics"/>
         </div>
     </div>
     
@@ -43,5 +30,10 @@
     
     const header = useHeader()
 
+    const tactics = [
+        {title: "Агенты", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        {title: "Оружие", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        {title: "Карты", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+    ]
 </script>
 

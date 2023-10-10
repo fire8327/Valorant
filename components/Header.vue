@@ -4,7 +4,7 @@
             <NuxtLink to="/" class="max-lg:z-40">
                 <Icon name="simple-icons:valorant" class="text-4xl lg:text-5xl"/>  
             </NuxtLink>
-            <div class="flex items-center lg:gap-12 xl:gap-[52px] max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:w-full bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] mobile_menu max-lg:flex-col max-lg:pt-24 max-lg:pb-4 max-lg:z-30 duration-500 transition-all" :class="{'max-lg:top-0 max-lg:-translate-y-full':!isMenuShow}">
+            <div class="flex items-center lg:gap-12 xl:gap-[52px] max-lg:absolute max-lg:left-0 max-lg:top-0 max-lg:w-full max-lg:bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] mobile_menu max-lg:flex-col max-lg:pt-24 max-lg:pb-4 max-lg:z-30 duration-500 transition-all" :class="{'max-lg:top-0 max-lg:-translate-y-full':!isMenuShow}">
                 <NuxtLink to="/" class="max-lg:w-full max-lg:flex max-lg:justify-center relative group" @click="isMenuShow = !isMenuShow">
                     <span class="max-lg:w-full max-lg:text-center max-lg:py-3 max-lg:px-4">Главная</span>
                     <span class="max-lg:hidden absolute link_bg rounded-full w-full h-2 left-0 md:-top-[54px] xl:-top-[68px] opacity-0 transition-all duration-500 group-hover:opacity-100"></span>
