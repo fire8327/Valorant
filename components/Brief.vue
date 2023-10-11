@@ -1,5 +1,5 @@
 <template>
-    <div class="relative flex flex-col gap-4 xl:gap-6 rounded-md p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20" ref="tacticEl">
+    <div class="relative flex flex-col gap-4 xl:gap-6 rounded-md overflow-hidden p-6 xl:p-10 bg-gradient-to-br from-[#303134] via-[#282828] to-[#282828] border border-white/20" ref="tacticEl">
         <p class="uppeercase text-lg md:text-xl xl:text-2xl z-[1] main_title font-bold">{{ props.title }}</p>
         <p class="text-sm xl:text-base text-white/60 z-[1]">{{ props.desc }}</p>
         <Icon :name="props.img" class="text-6xl self-end"/>
