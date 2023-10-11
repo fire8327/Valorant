@@ -19,7 +19,7 @@
             <div class="w-full lg:max-w-[45%] bg-black h-[335px]"></div>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-9">
-            <Tactic v-bind="tactic" v-for="tactic in tactics"/>
+            <Brief v-bind="tactic" v-for="tactic in tactics"/>
         </div>
     </div>
     
@@ -31,9 +31,9 @@
     const header = useHeader()
 
     const tactics = [
-        {title: "Агенты", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img:"/images/tactic/viper.png"},
-        {title: "Оружие", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img:"/images/tactic/frenzy.png"},
-        {title: "Карты", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", img:"/images/tactic/haven.png"}
+        {title: "Удобство", desc: "Вся информация о Valorant в одном месте на родном языке", img:"carbon:thumbs-up-filled"},
+        {title: "Доступность", desc: "Информация доступна 24/7 из любой точки мира и в любое время", img:"ri:24-hours-line"},
+        {title: "Полнота", desc: "Вы можете найти лайнапы, информацию об оружии и агентах", img:"material-symbols:info"}
     ]
 </script>
 
