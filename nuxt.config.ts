@@ -24,5 +24,8 @@ export default defineNuxtConfig({
     autoImports: [
       'defineStore'
     ]
-  }
+  },
+  supabase: {
+    redirect: false
+  },
 })
