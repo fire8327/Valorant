@@ -17,7 +17,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "nuxt-icon",
-    "@pinia/nuxt"
+    "@pinia/nuxt",
+    "@nuxtjs/supabase"
   ],
   pinia: {
     autoImports: [

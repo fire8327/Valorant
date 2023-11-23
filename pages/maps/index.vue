@@ -1,19 +1,13 @@
 <template>
-    <div class="font-Source-Code font-bold grid grid-cols-3 gap-10">
-        <!-- ГЛАВНАЯ СТРАНИЦА ДЛЯ КАРТЫ, ГДЕ БУДУТ ВЫВОДИТЬСЯ РАЗНЫЕ КАРТЫ КРУТЫЕ
-        <NuxtLink to="/maps/3">РЕЙНА</NuxtLink> -->
-        <ul>
-            <li v-for="item in maps.data">
-                <NuxtLink :to="`/maps/map-${item.uuid}`">{{  item.displayName }}</NuxtLink> 
-            </li>
-        </ul>
-        <!-- <pre>
-            {{  maps.data }}
-        </pre> -->
-    </div>  
+    <div class="grid grid-cols-5 gap-8">
+        <div class="flex flex-col gap-4 p-5 border border-[#2EECC5] shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center">
+            <img src="" alt="">
+
+        </div>
+    </div>
 </template>
 
 <script setup>
-        const { data: maps } = await useFetch(`https://valorant-api.com/v1/maps`)
-    
+    /* const supabase = useSupabaseClient() 
+    const { data: examples } = await useAsyncData('examples', async() => supabase.from('examples').select(), {transform: result => result.data}) */
 </script>
