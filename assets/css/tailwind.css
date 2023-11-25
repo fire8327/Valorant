@@ -5,7 +5,7 @@
 
 @layer base {
     #__nuxt{
-        @apply flex flex-col min-h-screen bg-[#161617] text-white font-semibold
+        @apply flex flex-col min-h-screen bg-[#161617] text-white font-semibold font-Source-Code
     }
         
     :root{
@@ -39,7 +39,7 @@
 .main_title {
     text-shadow: 0px 0px 36px rgba(165, 252, 235, 0.20);
     line-height: 110.6%;
-    background: linear-gradient(91deg, #B5FEEF 10.31%, #2EECC5 165.09%);
+    background: #2EECC5;    
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

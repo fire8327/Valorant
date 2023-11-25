@@ -10,10 +10,10 @@
         </button>
     </div> -->
     <div class="w-full" :style="`height: calc(100vh - ${header.height}px)`"></div>
-    <div class="flex flex-col gap-16 md:gap-20 xl:gap-36 pt-20 md:pt-36 xl:pt-56">
+    <div class="flex flex-col gap-16 md:gap-20 xl:gap-36">
         <div class="flex lg:items-center justify-between max-lg:flex-col gap-8 lg:gap-10">
             <div class="flex flex-col gap-4 w-full lg:max-w-[55%]">
-                <p class="main_title text-2xl md:text-[40px] xl:text-[55px] uppercase">Об игре</p>
+                <p class="text-2xl md:text-[40px] xl:text-[50px] uppercase main_title tracking-widest">Об игре</p>
                 <p class="text-sm xl:text-base text-white/60">Сочетайте свой стиль и опыт на глобальной конкурентной арене. У вас есть 13 раундов, чтобы атаковать и защищать свою сторону, используя острую стрельбу и тактические способности. И, имея по одной жизни за раунд, вам нужно будет думать быстрее, чем ваш противник, если вы хотите выжить. Сразитесь с врагами в соревновательном и нерейтинговом режимах, а также в Deathmatch и Spike Rush.</p>
             </div>
             <div class="w-full lg:max-w-[45%] bg-black h-[335px]"></div>
