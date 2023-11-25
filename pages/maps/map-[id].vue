@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-6 max-lg:flex-col">
+    <div class="flex gap-6 max-lg:flex-col lg:items-start">
         <div class="bg-gradient-to-br from-[#232325] to-[#2EECC5] rounded-xl p-px lg:w-1/2">
             <img src="https://valorantfiles.com/images/maps/12452a9d-48c3-0b02-e7eb-0381c3520404/splash.png" alt="" class="w-full h-full rounded-xl">
         </div>
