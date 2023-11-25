@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full px-4 md:px-6 xl:px-8 py-2 bg-gradient-to-r from-[#303134] to-transparent rounded-lg">
+    <div class="w-full px-4 md:px-6 xl:px-8 py-2 bg-gradient-to-r from-[#303134] via-[#303134] to-transparent rounded-lg">
         <p class="text-2xl md:text-3xl xl:text-4xl uppercase main_title">Карты</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mt-6 xl:mt-8">
