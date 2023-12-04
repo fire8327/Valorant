@@ -1,7 +1,7 @@
 <template>
     <div class="flex gap-6 max-lg:flex-col lg:items-start">
         <div class="bg-gradient-to-br from-[#232325] to-[#2EECC5] rounded-xl p-px lg:w-1/2">
-            <img src="https://valorantfiles.com/images/maps/12452a9d-48c3-0b02-e7eb-0381c3520404/splash.png" alt="" class="w-full h-full rounded-xl">
+            <img :src="`/images/maps/main/${map[0].title}.webp`" alt="" class="w-full h-full aspect-video object-cover rounded-xl">
         </div>
         <div class="flex flex-col lg:w-1/2 gap-4 text-[22px]">
             <div class="w-full py-2 bg-[#232325]/70 rounded-lg border border-white/20">
@@ -13,11 +13,9 @@
     </div>
     <div class="flex flex-col gap-4">
         <p class="text-2xl md:text-[40px] xl:text-[50px] uppercase main_title tracking-widest">Тактическая карта</p>
-        <div class="relative w-full lg:w-3/5 mx-auto max-lg:h-[calc(100vw-30px)] lg:h-[600px] xl:h-[700px]">
-            <img src="https://blitz-cdn-plain.blitz.gg/blitz/val/maps/lotus/images/lotus-layout-base.svg" alt="" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-            <img src="https://blitz-cdn-plain.blitz.gg/blitz/val/maps/lotus/images/lotus-offense-walls.svg" alt="" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-            <img src="https://blitz-cdn-plain.blitz.gg/blitz/val/maps/lotus/images/lotus-offense-callouts.svg" alt="" class="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
-            <p class="text-[10px] text-white/20 absolute left-1/2 -translate-x-1/2 bottom-0">* фото с сайта blitz.gg</p>
+        <div class="relative w-full lg:w-3/5 mx-auto">
+            <img :src="`/images/maps/tactic/${map[0].title}.svg`" alt="" class="w-full h-full">
+            <p class="text-[10px] text-white/20 absolute left-1/2 -translate-x-1/2 bottom-0">* фото взято с сайта blitz.gg</p>
         </div>
     </div>
     <div class="flex flex-col gap-4 -mt-6">
@@ -36,6 +34,4 @@
     map.value = maps.value.filter(el => {
         return el.id == id
     })
-
-
 </script>
