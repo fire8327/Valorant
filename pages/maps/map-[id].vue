@@ -8,7 +8,7 @@
                 <p class="text-2xl md:text-[40px] xl:text-[50px] uppercase text-center">Карта - <span class="main_title tracking-widest">{{ map[0].title }}</span></p>
             </div>
             <p>{{ map[0].desc }}</p>
-            <p>Координаты - <span class="main_title tracking-widest">{{ map[0].location[0] }}, {{ map[0].location[1] }}</span></p>
+            <div>Координаты - <NuxtLink :to="`https://yandex.ru/maps/?pt=${map[0].location[1]},${map[0].location[0]}&z=17&l=map`" target="_blank" class="main_title tracking-widest">{{ map[0].location[0] }}, {{ map[0].location[1] }}</NuxtLink></div>
         </div>    
     </div>
     <div class="flex flex-col gap-4">
