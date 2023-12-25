@@ -6,7 +6,7 @@
         <p class="text-xl md:text-3xl xl:text-4xl uppercase text-white/90 tracking-wider">Соревновательные</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             <NuxtLink :to="`/maps/map-${competitiveMap.id}`" class="flex flex-col gap-4 h-full border border-white/20 transition-all duration-300 relative overflow-hidden hover:scale-110 hover:shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center text-center rounded-xl" v-for="competitiveMap in competitiveMaps">
-                <NuxtImg sizes="100vw" width="1920px" height="1080px" :src="`/images/maps/main/${competitiveMap.title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
+                <NuxtImg sizes="1920px" :src="`/images/maps/main/${competitiveMap.title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
                 <p class="uppercase text-lg font-bold text-[#B5FEEF]">{{ competitiveMap.title }}</p>
                 <p class="text-white/90 leading-[123.1%] font-normal px-2 grow">{{ competitiveMap.desc.substring(0, 150) }}...</p>
                 <span class="w-full left-0 bottom-0 h-2 bg-[#2EECC5]"></span>
@@ -18,7 +18,7 @@
         <p class="text-xl md:text-3xl xl:text-4xl uppercase text-white/90 tracking-wider">Командный бой насмерть</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             <NuxtLink :to="`/maps/map-${dmMap.id}`" class="flex flex-col gap-4 h-full border border-white/20 transition-all duration-300 relative overflow-hidden hover:scale-110 hover:shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center text-center rounded-xl" v-for="dmMap in dmMaps">
-                <NuxtImg sizes="100vw" width="1920px" height="1080px" :src="`/images/maps/main/${dmMap.title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
+                <NuxtImg sizes="1920px" :src="`/images/maps/main/${dmMap.title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
                 <p class="uppercase text-lg font-bold text-[#B5FEEF]">{{ dmMap.title }}</p>
                 <p class="text-white/90 leading-[123.1%] font-normal px-2 grow">{{ dmMap.desc.substring(0, 150) }}...</p>
                 <span class="w-full left-0 bottom-0 h-2 bg-[#2EECC5]"></span>
@@ -30,7 +30,7 @@
         <p class="text-xl md:text-3xl xl:text-4xl uppercase text-white/90 tracking-wider">Тренировка</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             <NuxtLink :to="`/maps/map-${range[0].id}`" class="flex flex-col gap-4 h-full border border-white/20 transition-all duration-300 relative overflow-hidden hover:scale-110 hover:shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center text-center rounded-xl">
-                <NuxtImg sizes="100vw" width="1920px" height="1080px" :src="`/images/maps/main/${range[0].title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
+                <NuxtImg sizes="1920px" :src="`/images/maps/main/${range[0].title}.webp`" alt="" class="w-full aspect-[7/10] object-cover object-center"/>
                 <p class="uppercase text-lg font-bold text-[#B5FEEF]">{{ range[0].title }}</p>
                 <p class="text-white/90 leading-[123.1%] font-normal px-2 grow">{{ range[0].desc.substring(0, 150) }}...</p>
                 <span class="w-full left-0 bottom-0 h-2 bg-[#2EECC5]"></span>
