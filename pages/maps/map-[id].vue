@@ -11,7 +11,7 @@
             <div>Координаты - <NuxtLink :to="`https://yandex.ru/maps/?pt=${map[0].location[1]},${map[0].location[0]}&z=17&l=map`" target="_blank" class="main_title tracking-widest">{{ map[0].location[0] }}, {{ map[0].location[1] }}</NuxtLink></div>
         </div>    
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-4" v-if="map[0].type == 'competitive'">
         <p class="text-2xl md:text-[40px] xl:text-[50px] uppercase main_title tracking-widest">Тактическая карта</p>
         <div class="relative w-full lg:w-3/5 mx-auto">
             <img :src="`/images/maps/tactic/${map[0].title}.svg`" alt="" class="w-full h-full">

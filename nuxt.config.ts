@@ -34,5 +34,5 @@ export default defineNuxtConfig({
     netlify: {
       baseURl: process.env.IMAGES_URL
     }
-}
+  }
 })
