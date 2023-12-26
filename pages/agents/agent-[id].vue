@@ -5,7 +5,7 @@
         </div>
         <div class="flex items-start gap-6 max-lg:flex-col">
             <div class="w-full lg:w-1/2">
-                <img src="https://valorantfiles.com/images/agents/0e38b510-41a8-5780-5e8f-568b2a4f2d6c/fullportrait.png" alt=""> 
+                <NuxtImg :src="`/images/agents/full/${agent[0].name}.webp`" width="2048px" height="1860px" sizes="100vw" alt="" class="w-full"/>
             </div>
             <div class="flex flex-col gap-6 w-full lg:w-1/2">
                 <div class="flex flex-col text-lg xl:text-xl gap-1">
@@ -16,7 +16,7 @@
                     <p class="text-white/70">//ROLE</p>
                     <div class="flex items-center gap-4">
                         <p class="text-2xl md:text-3xl xl:text-4xl main_title tracking-widest">{{ agentClass.title }} </p>
-                        <img src="https://media.discordapp.net/attachments/776846320022585354/1188910642028097606/displayicon_1.png?ex=659c3e51&is=6589c951&hm=7b184f0aa9faefce808a906d0ae448da6828068b2a6278b282c65327b01c8194&=&format=webp&quality=lossless" alt="" class="w-6 h-6">
+                        <NuxtImg :src="`/images/agents/class/${agentClass.title}.png`" alt="" class="w-6 h-6"/>
                     </div>
                     <p>{{ agentClass.desc }}</p>
                 </div>
@@ -28,7 +28,7 @@
                     <p class="text-white/70">//REGION</p>
                     <div class="flex items-center gap-4">
                         <p>{{ agent[0].region.country }}</p>
-                        <img src="https://valorantfiles.com/images/flags/cn.png" alt="" class="w-8">
+                        <NuxtImg :src="`/images/agents/flags/${agent[0].region.icon}.png`" alt="" class="w-8 h-8"/>
                     </div>
                 </div>                  
             </div>
