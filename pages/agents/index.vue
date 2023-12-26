@@ -3,8 +3,8 @@
         <p class="text-2xl md:text-[40px] xl:text-[50px] uppercase main_title tracking-widest">Агенты</p>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <NuxtLink :to="`/agents/agent-${agent.id}`" class="flex flex-col gap-4 h-full border border-white/20 transition-all duration-300 relative overflow-hidden hover:scale-110 hover:shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center text-center rounded-xl" v-for="agent in agents">
-            <NuxtImg :src="`/images/agents/icons/${agent.name}.webp`" width="512px" height="512px" sizes="100vw" alt="" class="w-full aspect-square object-cover object-center"/>
+        <NuxtLink :to="`/agents/agent-${agent.id}`" class="flex flex-col gap-4 h-full border border-white/20 transition-all duration-300 relative overflow-hidden lg:hover:scale-110 lg:hover:shadow-[0px_0px_38px_0px_rgba(46,236,197,0.20)] items-center text-center rounded-xl" v-for="agent in agents">
+            <NuxtImg :src="`/images/agents/icons/${agent.name}.webp`" width="512px" height="512px" sizes="100vw" alt="" class="w-full rounded-full overflow-hidden pt-4"/>
             <p class="uppercase text-lg font-bold text-[#B5FEEF]">{{ agent.name }}</p>
             <p class="text-white/90 leading-[123.1%] font-normal px-2 grow">{{ agent.desc.substring(0, 150) }}...</p>
             <span class="w-full left-0 bottom-0 h-2 bg-[#2EECC5]"></span>
